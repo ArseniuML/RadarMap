@@ -1,0 +1,118 @@
+﻿Построение начато 01.10.2009 19:28:23.
+     1>Проект "D:\Projects\Workspace\RadarMapCreator\Geocoding\Geocoding.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Release\Geocoding.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\lib\ticpp\include /I..\..\lib\boost\boost_1_47 /I"..\..\lib\GDAL-1.9.1\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\Geocoding.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\lib\ticpp\include /I..\..\lib\boost\boost_1_47 /I"..\..\lib\GDAL-1.9.1\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Geocoding.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Geocoder.cpp Geocoding.cpp GeoConverter.cpp MathUtils.cpp RadarImage.cpp RangeDopplerModel.cpp SARScapeHeader.cpp
+         Geocoder.cpp
+     1>d:\projects\workspace\radarmapcreator\geocoding\LookupTables.h(86): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\projects\workspace\lib\gdal-1.9.1\include\cpl_string.h(223): warning C4251: std::_String_val<_Elem,_Alloc>::_Alval: class "std::allocator<_Ty>" должен иметь dll-интерфейс для использования клиентами class "std::_String_val<_Elem,_Alloc>"
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+                 and
+                 [
+                     _Ty=char
+                 ]
+                 and
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>D:\Projects\Workspace\lib\GDAL-1.9.1\include\gdal_priv.h(436): warning C4251: GDALColorTable::aoEntries: class "std::vector<_Ty>" должен иметь dll-интерфейс для использования клиентами class "GDALColorTable"
+                 with
+                 [
+                     _Ty=GDALColorEntry
+                 ]
+     1>Geocoder.cpp(100): warning C4018: <: несоответствие типов со знаком и без знака
+     1>Geocoder.cpp(234): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>Geocoder.cpp(234): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+         Geocoding.cpp
+     1>d:\projects\workspace\radarmapcreator\geocoding\LookupTables.h(86): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\projects\workspace\lib\gdal-1.9.1\include\cpl_string.h(223): warning C4251: std::_String_val<_Elem,_Alloc>::_Alval: class "std::allocator<_Ty>" должен иметь dll-интерфейс для использования клиентами class "std::_String_val<_Elem,_Alloc>"
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+                 and
+                 [
+                     _Ty=char
+                 ]
+                 and
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>D:\Projects\Workspace\lib\GDAL-1.9.1\include\gdal_priv.h(436): warning C4251: GDALColorTable::aoEntries: class "std::vector<_Ty>" должен иметь dll-интерфейс для использования клиентами class "GDALColorTable"
+                 with
+                 [
+                     _Ty=GDALColorEntry
+                 ]
+         GeoConverter.cpp
+         MathUtils.cpp
+         RadarImage.cpp
+     1>d:\projects\workspace\radarmapcreator\geocoding\LookupTables.h(86): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\projects\workspace\lib\gdal-1.9.1\include\cpl_string.h(223): warning C4251: std::_String_val<_Elem,_Alloc>::_Alval: class "std::allocator<_Ty>" должен иметь dll-интерфейс для использования клиентами class "std::_String_val<_Elem,_Alloc>"
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+                 and
+                 [
+                     _Ty=char
+                 ]
+                 and
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>D:\Projects\Workspace\lib\GDAL-1.9.1\include\gdal_priv.h(436): warning C4251: GDALColorTable::aoEntries: class "std::vector<_Ty>" должен иметь dll-интерфейс для использования клиентами class "GDALColorTable"
+                 with
+                 [
+                     _Ty=GDALColorEntry
+                 ]
+     1>RadarImage.cpp(45): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(46): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(48): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(49): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(69): warning C4018: <: несоответствие типов со знаком и без знака
+     1>RadarImage.cpp(71): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(72): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(91): warning C4018: <: несоответствие типов со знаком и без знака
+     1>RadarImage.cpp(93): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(94): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>RadarImage.cpp(112): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>RadarImage.cpp(112): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>RadarImage.cpp(112): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>RadarImage.cpp(112): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+         RangeDopplerModel.cpp
+         SARScapeHeader.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\lib\ticpp\lib /LIBPATH:..\..\lib\boost\boost_1_47\lib /LIBPATH:"..\..\lib\GDAL-1.9.1\lib" ticpp.lib gdal_i.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Geocoding.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.lib" /MACHINE:X86 Release\Geocoder.obj
+         Release\Geocoding.obj
+         Release\GeoConverter.obj
+         Release\MathUtils.obj
+         Release\RadarImage.obj
+         Release\RangeDopplerModel.obj
+         Release\SARScapeHeader.obj
+         Release\stdafx.obj
+            Создается библиотека D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.lib и объект D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.exp
+         Создание кода
+         Создание кода завершено
+         Geocoding.vcxproj -> D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Projects\Workspace\RadarMapCreator\Release\Geocoding.exe;#1" /manifest Release\Geocoding.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\Geocoding.unsuccessfulbuild" удаляется.
+         Обращение к "Release\Geocoding.lastbuildstate".
+     1>Построение проекта "D:\Projects\Workspace\RadarMapCreator\Geocoding\Geocoding.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:11.88

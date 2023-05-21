@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Window">
+      <UniqueIdentifier>{8c72adc6-aabe-40b5-9596-7ea17864c205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sort">
+      <UniqueIdentifier>{ae793239-3fbd-4d69-8d1e-41b02b8a6503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{8edcd301-889a-4569-8d01-dc8a7dddde53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{60fdbf7c-af6e-4bd8-9551-c1f3f8c8669b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collection">
+      <UniqueIdentifier>{113da289-e8fc-463c-89ab-d56323aee88a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Processing">
+      <UniqueIdentifier>{bc0d0856-cb18-4ffe-9f1e-218cafeec9a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window\Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader\Program.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader\Unit.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window\Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort\Sort.h">
+      <Filter>Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\Program.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\Unit.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Collection\Array2D.h">
+      <Filter>Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Serialization\EXR.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Rlib.h" />
+    <ClInclude Include="Collection\Texture.h">
+      <Filter>Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Processing\Processing.h">
+      <Filter>Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="Collection\Renderbuffer.h">
+      <Filter>Collection</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

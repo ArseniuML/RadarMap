@@ -1,0 +1,4 @@
+vec2 Curve(vec3 pos) 
+{
+	return vec2(-atan(pos.x, pos.y), length(pos));
+}

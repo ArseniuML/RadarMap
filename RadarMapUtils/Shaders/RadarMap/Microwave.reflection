@@ -1,0 +1,17 @@
+uniform float gain;
+
+struct Material
+{
+	float Brightness;
+};
+
+float Reflection(Material mat, float cosLia)
+{
+	if (cosLia <=0 ) return 0;
+	float signal = gain * mat.Brightness * cosLia;
+
+	// Проверка на NaN
+	if (signal < 10) return signal;
+	else if (signal >= 10) return signal;
+	else return 0;
+}

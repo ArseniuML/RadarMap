@@ -1,0 +1,9 @@
+vec2 Curve(vec3 pos) 
+{
+	return vec2(-atan(pos.x, pos.y), -atan(pos.z, length(pos.xy)));
+}
+
+vec3 Decart(vec2 pos)
+{
+	return vec3(-cos(pos.y) * sin(pos.x), cos(pos.y) * cos(pos.x), -sin(pos.y));
+}

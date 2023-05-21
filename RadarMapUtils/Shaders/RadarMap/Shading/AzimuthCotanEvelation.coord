@@ -1,0 +1,11 @@
+uniform float height;
+
+vec2 Curve(vec3 pos) 
+{
+	return vec2(-atan(pos.x, pos.y), - length(pos.xy) * height / pos.z);
+}
+
+vec3 Decart(vec2 pos)
+{
+	return normalize(vec3(- pos.y * sin(pos.x), pos.y * cos(pos.x), -height));
+}

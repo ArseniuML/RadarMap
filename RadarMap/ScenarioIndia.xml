@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<RadarMapRoot>
+  <Airplane>
+    <X>-214500</X>
+    <Y>4000</Y>
+    <Z>-160500</Z>
+    <Height>4000</Height>
+   <Heading>15</Heading>
+ </Airplane>
+  <DCenter>109000</DCenter>
+  <Mode>LRM</Mode>
+</RadarMapRoot>

@@ -1,0 +1,136 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (ebc92d04).
+//
+// RadarMapServer.tlh
+//
+// C++ source equivalent of Win32 type library ..\Output\RadarMapServer.dll
+// compiler-generated file created 10/31/08 at 17:09:15 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("457707f8-d01c-4808-9ecd-ce1cbbbeeeec"))
+/* dual interface */ IRadarMapClient;
+struct /* coclass */ RadarMap;
+struct __declspec(uuid("0668b278-2856-4764-a740-05fa857613e9"))
+/* dual interface */ IRadarMap;
+struct __declspec(uuid("5aa6713e-abd8-49f6-b257-edf9b24a83f0"))
+/* dual interface */ IRT;
+struct __declspec(uuid("ffa3121f-7d90-4b4a-ac71-de67bd637cba"))
+/* dual interface */ ISTC;
+struct __declspec(uuid("bd669c21-9d6e-4480-baf7-c1423cf06687"))
+/* dual interface */ ICapture;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IRadarMapClient, __uuidof(IRadarMapClient));
+_COM_SMARTPTR_TYPEDEF(IRadarMap, __uuidof(IRadarMap));
+_COM_SMARTPTR_TYPEDEF(IRT, __uuidof(IRT));
+_COM_SMARTPTR_TYPEDEF(ISTC, __uuidof(ISTC));
+_COM_SMARTPTR_TYPEDEF(ICapture, __uuidof(ICapture));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("457707f8-d01c-4808-9ecd-ce1cbbbeeeec"))
+IRadarMapClient : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        IDispatch * * pVal ) = 0;
+};
+
+struct __declspec(uuid("ea86d335-57f2-4ca9-98d4-771f5a8ab836"))
+RadarMap;
+    // [ default ] interface IRadarMap
+    // interface IRT
+    // interface ISTC
+    // interface ICapture
+
+struct __declspec(uuid("0668b278-2856-4764-a740-05fa857613e9"))
+IRadarMap : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall LoadFromFile (
+        BSTR name ) = 0;
+    virtual HRESULT __stdcall get_IsReady (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("5aa6713e-abd8-49f6-b257-edf9b24a83f0"))
+IRT : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Initialize (
+        unsigned long time ) = 0;
+    virtual HRESULT __stdcall Run (
+        unsigned long time ) = 0;
+    virtual HRESULT __stdcall Terminate ( ) = 0;
+};
+
+struct __declspec(uuid("ffa3121f-7d90-4b4a-ac71-de67bd637cba"))
+ISTC : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall STConnect (
+        IDispatch * pDisp,
+        unsigned long ID ) = 0;
+};
+
+struct __declspec(uuid("bd669c21-9d6e-4480-baf7-c1423cf06687"))
+ICapture : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetParams (
+        int * width,
+        int * height,
+        double * angleHorizontal,
+        double * angleVertical1,
+        double * angleVertical2 ) = 0;
+    virtual HRESULT __stdcall SetPtrBitmap (
+        unsigned char * ptrBitmap ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_RADARMAPSERVERLib =
+    {0x2bbad010,0x1631,0x4ebf,{0xa1,0xbf,0x0e,0x2f,0x7d,0x15,0xee,0xfd}};
+extern "C" const GUID __declspec(selectany) IID_IRadarMapClient =
+    {0x457707f8,0xd01c,0x4808,{0x9e,0xcd,0xce,0x1c,0xbb,0xbe,0xee,0xec}};
+extern "C" const GUID __declspec(selectany) CLSID_RadarMap =
+    {0xea86d335,0x57f2,0x4ca9,{0x98,0xd4,0x77,0x1f,0x5a,0x8a,0xb8,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IRadarMap =
+    {0x0668b278,0x2856,0x4764,{0xa7,0x40,0x05,0xfa,0x85,0x76,0x13,0xe9}};
+extern "C" const GUID __declspec(selectany) IID_IRT =
+    {0x5aa6713e,0xabd8,0x49f6,{0xb2,0x57,0xed,0xf9,0xb2,0x4a,0x83,0xf0}};
+extern "C" const GUID __declspec(selectany) IID_ISTC =
+    {0xffa3121f,0x7d90,0x4b4a,{0xac,0x71,0xde,0x67,0xbd,0x63,0x7c,0xba}};
+extern "C" const GUID __declspec(selectany) IID_ICapture =
+    {0xbd669c21,0x9d6e,0x4480,{0xba,0xf7,0xc1,0x42,0x3c,0xf0,0x66,0x87}};
+
+#pragma pack(pop)

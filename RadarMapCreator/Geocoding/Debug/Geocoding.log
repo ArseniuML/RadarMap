@@ -1,0 +1,77 @@
+﻿Построение начато 30.09.2009 17:07:10.
+     1>Проект "D:\Projects\Workspace\RadarMapCreator\Geocoding\Geocoding.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\Geocoding.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\lib\ticpp\include /I..\..\lib\boost\boost_1_47 /I"..\..\lib\GDAL-1.9.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Geocoding.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\lib\ticpp\include /I..\..\lib\boost\boost_1_47 /I"..\..\lib\GDAL-1.9.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Geocoding.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeoConverter.cpp Geocoder.cpp Geocoding.cpp MathUtils.cpp RadarImage.cpp RangeDopplerModel.cpp SARScapeHeader.cpp
+         SARScapeHeader.cpp
+         RangeDopplerModel.cpp
+         MathUtils.cpp
+         GeoConverter.cpp
+         Создание кода...
+         Компиляция...
+         Geocoder.cpp
+     1>d:\projects\workspace\radarmapcreator\geocoding\lookuptables.h(86): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\projects\workspace\lib\gdal-1.9.1\include\cpl_string.h(223): warning C4251: std::_String_val<_Elem,_Alloc>::_Alval: class "std::allocator<_Ty>" должен иметь dll-интерфейс для использования клиентами class "std::_String_val<_Elem,_Alloc>"
+                 with
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+                 and
+                 [
+                     _Ty=char
+                 ]
+                 and
+                 [
+                     _Elem=char,
+                     _Alloc=std::allocator<char>
+                 ]
+     1>d:\projects\workspace\lib\gdal-1.9.1\include\gdal_priv.h(436): warning C4251: GDALColorTable::aoEntries: class "std::vector<_Ty>" должен иметь dll-интерфейс для использования клиентами class "GDALColorTable"
+                 with
+                 [
+                     _Ty=GDALColorEntry
+                 ]
+     1>d:\projects\workspace\radarmapcreator\geocoding\geocoder.cpp(97): warning C4018: <: несоответствие типов со знаком и без знака
+     1>d:\projects\workspace\radarmapcreator\geocoding\geocoder.cpp(178): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>d:\projects\workspace\radarmapcreator\geocoding\geocoder.cpp(178): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+         Создание кода...
+         Пропуск... (изменения не обнаружены)
+         RadarImage.cpp
+         Geocoding.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Geocoding.exe.embed.manifest.res" Debug\Geocoding_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\ticpp\lib /LIBPATH:..\..\lib\boost\boost_1_47\lib /LIBPATH:"..\..\lib\GDAL-1.9.1\lib" ticppd.lib gdal_i.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Geocoding.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.lib" /MACHINE:X86 Debug\Geocoding.exe.embed.manifest.res
+         Debug\Geocoder.obj
+         Debug\Geocoding.obj
+         Debug\GeoConverter.obj
+         Debug\MathUtils.obj
+         Debug\RadarImage.obj
+         Debug\RangeDopplerModel.obj
+         Debug\SARScapeHeader.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Geocoding.exe.embed.manifest" /manifest Debug\Geocoding.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Geocoding.exe.embed.manifest.res" Debug\Geocoding_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\ticpp\lib /LIBPATH:..\..\lib\boost\boost_1_47\lib /LIBPATH:"..\..\lib\GDAL-1.9.1\lib" ticppd.lib gdal_i.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Geocoding.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.lib" /MACHINE:X86 Debug\Geocoding.exe.embed.manifest.res
+         Debug\Geocoder.obj
+         Debug\Geocoding.obj
+         Debug\GeoConverter.obj
+         Debug\MathUtils.obj
+         Debug\RadarImage.obj
+         Debug\RangeDopplerModel.obj
+         Debug\SARScapeHeader.obj
+         Debug\stdafx.obj
+         Geocoding.vcxproj -> D:\Projects\Workspace\RadarMapCreator\Debug\Geocoding.exe
+       FinalizeBuildStatus:
+         Файл "Debug\Geocoding.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\Geocoding.lastbuildstate".
+     1>Построение проекта "D:\Projects\Workspace\RadarMapCreator\Geocoding\Geocoding.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:10.16

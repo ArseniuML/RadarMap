@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RLib", "RLib\RLib.vcxproj", "{CA3A7C3E-6781-43B7-9099-793549616082}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadarMapCreator", "RadarMapCreator\RadarMapCreator.vcxproj", "{02FC268D-CE84-448A-BD94-E102FE9B1DA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{78B6E515-407E-498F-9E18-4145F316D316} = {78B6E515-407E-498F-9E18-4145F316D316}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strips", "Strips\Strips.vcxproj", "{78B6E515-407E-498F-9E18-4145F316D316}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Indexator", "Indexator\Indexator.vcxproj", "{9902A63D-87AE-49C6-89AB-63249EE48704}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IndexatorRate", "IndexatorRate\IndexatorRate.vcxproj", "{409B074C-583C-4578-8466-D6CB682CB416}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA3A7C3E-6781-43B7-9099-793549616082}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA3A7C3E-6781-43B7-9099-793549616082}.Debug|Win32.Build.0 = Debug|Win32
+		{CA3A7C3E-6781-43B7-9099-793549616082}.Release|Win32.ActiveCfg = Release|Win32
+		{CA3A7C3E-6781-43B7-9099-793549616082}.Release|Win32.Build.0 = Release|Win32
+		{02FC268D-CE84-448A-BD94-E102FE9B1DA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02FC268D-CE84-448A-BD94-E102FE9B1DA4}.Debug|Win32.Build.0 = Debug|Win32
+		{02FC268D-CE84-448A-BD94-E102FE9B1DA4}.Release|Win32.ActiveCfg = Release|Win32
+		{02FC268D-CE84-448A-BD94-E102FE9B1DA4}.Release|Win32.Build.0 = Release|Win32
+		{78B6E515-407E-498F-9E18-4145F316D316}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78B6E515-407E-498F-9E18-4145F316D316}.Debug|Win32.Build.0 = Debug|Win32
+		{78B6E515-407E-498F-9E18-4145F316D316}.Release|Win32.ActiveCfg = Release|Win32
+		{78B6E515-407E-498F-9E18-4145F316D316}.Release|Win32.Build.0 = Release|Win32
+		{9902A63D-87AE-49C6-89AB-63249EE48704}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9902A63D-87AE-49C6-89AB-63249EE48704}.Debug|Win32.Build.0 = Debug|Win32
+		{9902A63D-87AE-49C6-89AB-63249EE48704}.Release|Win32.ActiveCfg = Release|Win32
+		{9902A63D-87AE-49C6-89AB-63249EE48704}.Release|Win32.Build.0 = Release|Win32
+		{409B074C-583C-4578-8466-D6CB682CB416}.Debug|Win32.ActiveCfg = Debug|Win32
+		{409B074C-583C-4578-8466-D6CB682CB416}.Debug|Win32.Build.0 = Debug|Win32
+		{409B074C-583C-4578-8466-D6CB682CB416}.Release|Win32.ActiveCfg = Release|Win32
+		{409B074C-583C-4578-8466-D6CB682CB416}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

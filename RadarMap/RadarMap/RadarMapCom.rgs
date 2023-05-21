@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {5B332688-640C-4AF8-9901-AAC6F071616B} = s 'RadarMapCom Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{ADB4A802-23BC-44A0-8E93-193FEE25F67D}'
+			Version = s '1.0'
+		}
+	}
+}

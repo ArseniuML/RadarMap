@@ -1,0 +1,72 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (cb8bfdec).
+//
+// TestCSEx.tlh
+//
+// C++ source equivalent of Win32 type library ..\Output\TestCSEx.dll
+// compiler-generated file created 10/07/08 at 18:12:10 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ CSEx;
+struct __declspec(uuid("9478a4d4-e9cb-40ee-a821-f6b5ecfc0e26"))
+/* dual interface */ ICSEx;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICSEx, __uuidof(ICSEx));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("61d53874-8964-4ef7-8e4d-65102824ae32"))
+CSEx;
+    // [ default ] interface ICSEx
+
+struct __declspec(uuid("9478a4d4-e9cb-40ee-a821-f6b5ecfc0e26"))
+ICSEx : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Open (
+        unsigned long * pHandle,
+        LPSTR name,
+        unsigned long size ) = 0;
+    virtual HRESULT __stdcall Read (
+        unsigned long handle,
+        unsigned char * pBuffer,
+        unsigned long offset,
+        unsigned long size ) = 0;
+    virtual HRESULT __stdcall Write (
+        unsigned long handle,
+        unsigned char * pBuffer,
+        unsigned long offset,
+        unsigned long size ) = 0;
+    virtual HRESULT __stdcall Swap (
+        unsigned long handle1,
+        unsigned long handle2 ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_TESTCSEXLib =
+    {0x53865557,0x99aa,0x4e4a,{0xbc,0x59,0x8e,0x37,0xd4,0x1d,0x78,0xbc}};
+extern "C" const GUID __declspec(selectany) CLSID_CSEx =
+    {0x61d53874,0x8964,0x4ef7,{0x8e,0x4d,0x65,0x10,0x28,0x24,0xae,0x32}};
+extern "C" const GUID __declspec(selectany) IID_ICSEx =
+    {0x9478a4d4,0xe9cb,0x40ee,{0xa8,0x21,0xf6,0xb5,0xec,0xfc,0x0e,0x26}};
+
+#pragma pack(pop)

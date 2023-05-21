@@ -1,0 +1,211 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RadarMapDlgClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RadarMapDlgClient.ico"
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Английский (США) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RADARMAPDLGCLIENT_DIALOG DIALOGEX 0, 0, 429, 289
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RadarMapDlgClient"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Slant range",IDC_STATIC,319,2,101,280,BS_CENTER
+    EDITTEXT        IDC_EDIT_X,30,36,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,130,13,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z,30,16,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEADING,132,150,60,14,ES_CENTER | ES_AUTOHSCROLL
+    RTEXT           "x",IDC_STATIC,13,41,8,8
+    RTEXT           "y",IDC_STATIC,111,18,8,8
+    RTEXT           "z",IDC_STATIC,13,17,8,8
+    EDITTEXT        IDC_EDIT_HEIGHT,130,36,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AZ_RADIUS,245,76,60,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "height",IDC_STATIC,99,41,20,8
+    RTEXT           "Azimuthal radius",IDC_STATIC,180,80,52,8
+    EDITTEXT        IDC_EDIT_WAIT,245,261,60,14,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Load params",IDC_BUTTON_LOADPARAMS,17,261,60,14,WS_GROUP
+    CONTROL         "",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,17,229,289,12
+    COMBOBOX        IDC_COMBO_MODE,25,76,85,30,CBS_DROPDOWN | CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_D,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,326,14,12,262
+    EDITTEXT        IDC_EDIT_DCENTER,347,131,60,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DMAX,347,19,60,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DMIN,342,261,60,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_HEADING,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,17,168,290,11
+    GROUPBOX        "Airplane",IDC_STATIC,6,2,195,60,BS_CENTER
+    EDITTEXT        IDC_EDIT_BRIGHTNESS,132,210,60,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_AZ_RESOLUTION,245,102,60,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Azimuthal resolution",IDC_STATIC,166,103,66,8
+    GROUPBOX        "Mode",IDC_STATIC,6,66,306,67,BS_CENTER
+    GROUPBOX        "Heading",IDC_STATIC,6,138,307,51,BS_CENTER
+    GROUPBOX        "Brightness",IDC_STATIC,6,197,307,54,BS_CENTER
+    DEFPUSHBUTTON   "Request map",IDC_BUTTON_REQUESTMAP,155,261,60,14,WS_GROUP
+    DEFPUSHBUTTON   "Navigate",IDC_BUTTON_NAVIGATE,86,261,60,14,WS_GROUP
+    EDITTEXT        IDC_EDIT_FRAMECENTER_Z,240,17,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FRAMECENTER_X,240,36,60,14,ES_AUTOHSCROLL
+    RTEXT           "x",IDC_STATIC,222,41,8,8
+    RTEXT           "z",IDC_STATIC,222,19,8,8
+    GROUPBOX        "Frame center",IDC_STATIC,206,2,104,60,BS_CENTER
+    EDITTEXT        IDC_EDIT_DRADIUS,348,156,60,14,ES_CENTER | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "RadarMapDlgClient MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "RadarMapDlgClient"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "RadarMapDlgClient.EXE"
+            VALUE "ProductName", "RadarMapDlgClient Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_RADARMAPDLGCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 420
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 282
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Английский (США) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RadarMapDlgClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

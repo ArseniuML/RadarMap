@@ -1,0 +1,65 @@
+// RadarMap.idl: источник IDL для RadarMap
+//
+
+// Этот файл будет обработан средством MIDL для
+// создания библиотеки типов (RadarMap.tlb) и кода маршалирования.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(EDE2CDAD-E62B-4F10-BC9C-3F947B66A1DC),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IRadarMap : IDispatch
+{
+};
+
+[
+	object,
+	uuid(8DABC68E-D8B9-4bb8-B387-1A03BC0594F0),
+	dual,
+	pointer_default(unique)
+]
+interface IRT : IDispatch
+{
+		[id(1), helpstring("method Initialize")] HRESULT Initialize([in] unsigned long time);
+		[id(2), helpstring("method Run")] HRESULT Run([in] unsigned long time);
+		[id(3), helpstring("method Terminate")] HRESULT Terminate();
+};
+
+[
+	object,
+	uuid(E55FBD86-BB76-4332-B1C1-E9C980891215),
+	dual,
+	pointer_default(unique)
+]
+interface ISTC : IDispatch
+{
+		[id(1), helpstring("method STConnect")] HRESULT STConnect([in] IDispatch* pDisp, [in] unsigned long ID);
+};
+
+[
+	uuid(ADB4A802-23BC-44A0-8E93-193FEE25F67D),
+	version(1.0),
+]
+library RadarMapLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(5B332688-640C-4AF8-9901-AAC6F071616B)		
+	]
+	coclass RadarMapCom
+	{
+		[default] interface IRadarMap;
+		interface IRT;
+		interface ISTC;
+	};
+};
+

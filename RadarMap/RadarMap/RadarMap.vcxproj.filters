@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Созданные файлы">
+      <UniqueIdentifier>{0d5fb11d-6af0-46b4-b704-711d1630432b}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="RadarMap">
+      <UniqueIdentifier>{615952ec-e3f3-46af-a834-297fda18d4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Config">
+      <UniqueIdentifier>{8b40971f-6276-4838-b094-27a3a5533cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Video">
+      <UniqueIdentifier>{6f121466-af7e-4056-be1a-bc3e9f33339b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Frame">
+      <UniqueIdentifier>{3ef2bc98-3bb3-47cb-95e7-9f07d282cbc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Effects">
+      <UniqueIdentifier>{2eb6006f-512c-4cba-8e1b-c074370acef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Geometry">
+      <UniqueIdentifier>{88e4f263-b828-4b55-8953-8ff92569c47d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Shading">
+      <UniqueIdentifier>{cf3ad7f2-d042-4b86-9766-8235c1c1940c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Terrain">
+      <UniqueIdentifier>{11d58e21-4d46-49ce-b97c-73133ccaa4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Targets">
+      <UniqueIdentifier>{b72831ea-cb4f-4634-baa1-cd6a79caee5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Targets\Point">
+      <UniqueIdentifier>{d163e046-22bb-4b69-b5d7-05a2ee11f9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RadarMap\Terrain\Background">
+      <UniqueIdentifier>{cc1a4225-3520-4328-aa2d-ab6411f3679c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib">
+      <UniqueIdentifier>{2ff04a5c-0cf5-4318-ae88-4cec6b15fc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Collection">
+      <UniqueIdentifier>{d154f3f2-bfeb-47b8-8c65-c9d713ade2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Processing">
+      <UniqueIdentifier>{15e577fa-e543-4382-8618-07f8e91ac294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Shader">
+      <UniqueIdentifier>{ebbee950-94cf-407b-b81b-11dadf4d64ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Serialization">
+      <UniqueIdentifier>{186af21b-8f93-4b63-b1f0-2733009afcc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Window">
+      <UniqueIdentifier>{a259352f-6935-40eb-9b41-54fe3f9e3c41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap_i.c">
+      <Filter>Созданные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlConfigReader.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\RadarMapAsync.cpp">
+      <Filter>RadarMap</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\RadarMapSync.cpp">
+      <Filter>RadarMap</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Timer.cpp">
+      <Filter>RadarMap</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Config\AppConfig.cpp">
+      <Filter>RadarMap\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Video\TVCaptureVideoController.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Video\HDMICaptureVideoController.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Config\TechConfig.cpp">
+      <Filter>RadarMap\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMapCom.cpp">
+      <Filter>RadarMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Video\DefMonitors.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\World.cpp">
+      <Filter>RadarMap</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Frame\Frame.cpp">
+      <Filter>RadarMap\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\mrg32k3a.cpp">
+      <Filter>RadarMap\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\Noise.cpp">
+      <Filter>RadarMap\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\Processor.cpp">
+      <Filter>RadarMap\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Geometry\Mesh.cpp">
+      <Filter>RadarMap\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\Terrain.cpp">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\Tile.cpp">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\LOD.cpp">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Targets\Model.cpp">
+      <Filter>RadarMap\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Targets\Targets.cpp">
+      <Filter>RadarMap\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Geometry\GeometricObject.cpp">
+      <Filter>RadarMap\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Window\Window.cpp">
+      <Filter>RLib\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Shader\Program.cpp">
+      <Filter>RLib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Shader\Unit.cpp">
+      <Filter>RLib\Shader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap_i.h">
+      <Filter>Созданные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrVideoConfig.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeVideoConfig.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlConfigReader.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\RadarMapAsync.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\RadarMapSync.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\RequestData.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Timer.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Config\AppConfig.h">
+      <Filter>RadarMap\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\TVCapture.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\HDMICapture.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\HDMICaptureVideoController.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Config\TechConfig.h">
+      <Filter>RadarMap\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMapCom.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Constants.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Request.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\DefMonitors.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\World.h">
+      <Filter>RadarMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Frame\CubicKernel.h">
+      <Filter>RadarMap\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Frame\Frame.h">
+      <Filter>RadarMap\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Frame\Shaders.h">
+      <Filter>RadarMap\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Effects\Noise.h">
+      <Filter>RadarMap\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Effects\Processor.h">
+      <Filter>RadarMap\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Effects\Shaders.h">
+      <Filter>RadarMap\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Geometry\Mesh.h">
+      <Filter>RadarMap\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Geometry\RenderProgram.h">
+      <Filter>RadarMap\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Targets\Point\RenderProgram.h">
+      <Filter>RadarMap\Targets\Point</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Terrain\Terrain.h">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Terrain\Tile.h">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Terrain\Background\RenderProgram.h">
+      <Filter>RadarMap\Terrain\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Shading\ShadeMap.h">
+      <Filter>RadarMap\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Shading\ShadeMapAdditional.h">
+      <Filter>RadarMap\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Shading\Shaders.h">
+      <Filter>RadarMap\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\TVCaptureVideoController.h">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Terrain\Shaders.h">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Terrain\LOD.h">
+      <Filter>RadarMap\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Targets\Model.h">
+      <Filter>RadarMap\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Targets\Targets.h">
+      <Filter>RadarMap\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="RadarMap\Geometry\GeometricObject.h">
+      <Filter>RadarMap\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Collection\Array2D.h">
+      <Filter>RLib\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Collection\Renderbuffer.h">
+      <Filter>RLib\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Collection\Texture.h">
+      <Filter>RLib\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Window\Window.h">
+      <Filter>RLib\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Serialization\EXR.h">
+      <Filter>RLib\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Shader\Program.h">
+      <Filter>RLib\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Shader\Unit.h">
+      <Filter>RLib\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Processing\Processing.h">
+      <Filter>RLib\Processing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RadarMap.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="RadarMap.rgs">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="RadarMap.def">
+      <Filter>Файлы исходного кода</Filter>
+    </None>
+    <None Include="RadarMapCom.rgs">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="..\RadarMap.ini" />
+    <None Include="..\videochannels.config" />
+    <None Include="..\RadarMap.config" />
+    <None Include="..\Shaders\RadarMap\Microwave.reflection">
+      <Filter>RadarMap</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Terrain\ElementsFOV.fs">
+      <Filter>RadarMap\Terrain</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Terrain\Background\RenderBackground.fs">
+      <Filter>RadarMap\Terrain\Background</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Targets\Point\PointRender.fs">
+      <Filter>RadarMap\Targets\Point</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Targets\Point\PointRender.vs">
+      <Filter>RadarMap\Targets\Point</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\AzimuthCotanEvelation.coord">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\AzimuthEvelation.coord">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\Distance.fs">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\Shade.fs">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.fs">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.gs">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.vs">
+      <Filter>RadarMap\Shading</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\AzimuthRange.coord">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.fs">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.gs">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.vs">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\BicubicFilter.fs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\BrightnessRegulator.fs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\DecartProjector.fs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\Polar.fs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\PolarProjector.fs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Frame\Projector.vs">
+      <Filter>RadarMap\Frame</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\AdditiveNoise.fs">
+      <Filter>RadarMap\Effects</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\Permutation.fs">
+      <Filter>RadarMap\Effects</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\Speckle.fs">
+      <Filter>RadarMap\Effects</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\BlurAzimuth.fs">
+      <Filter>RadarMap\Effects</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\BlurRange.fs">
+      <Filter>RadarMap\Effects</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Terrain\ElementsShade.fs">
+      <Filter>RadarMap\Terrain</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\SignalFromPos.fs">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\GeometricFunctions.sh">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+    <None Include="..\Shaders\RadarMap\Geometry\IntersectTriangle.fs">
+      <Filter>RadarMap\Geometry</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="RadarMap.idl">
+      <Filter>Файлы исходного кода</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\common\dx\CommServerData.xlsx" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B276F0B2-986D-42C8-9BE1-0EF96001DE60}</ProjectGuid>
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsManaged>true</CompileAsManaged>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir);..\..\common\dll;..\..\common\hpp;..\..\lib\boost\boost_1_36_0;..\..\lib\GL\include;..\..\lib\OpenFlight\include;..\..\lib\OpenExr\include;..\..\lib\ticpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>RadarMap_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>RadarMap_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>RadarMap_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)RadarMap.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\RadarMap.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalDependencies>half.lib;iex.lib;IlmImf.lib;ilmthread.lib;zlibd.lib;opengl32.lib;glu32.lib;glee.lib;mgapilib.lib;ticppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <CLRThreadAttribute>MTAThreadingAttribute</CLRThreadAttribute>
+      <AdditionalLibraryDirectories>..\..\lib\GL\lib;..\..\lib\OpenExr\lib\$(Configuration);..\..\lib\zlib\lib;..\..\lib\OpenFlight\lib;..\..\lib\ticpp\lib;$(SolutionDir)\Output\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(ProjectDir);..\..\common\dll;..\..\common\hpp;..\..\lib\boost\boost_1_36_0;..\..\lib\GL\include;..\..\lib\OpenFlight\include;..\..\lib\OpenExr\include;..\..\lib\zlib\include;..\..\lib\ticpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>RadarMap_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>RadarMap_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>RadarMap_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)RadarMap.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\RadarMap.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalDependencies>half.lib;iex.lib;IlmImf.lib;ilmthread.lib;zlib.lib;opengl32.lib;glu32.lib;glee.lib;mgapilib.lib;ticpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <CLRThreadAttribute>MTAThreadingAttribute</CLRThreadAttribute>
+      <AdditionalLibraryDirectories>..\..\lib\GL\lib;..\..\lib\OpenExr\lib\$(Configuration);..\..\lib\zlib\lib;..\..\lib\OpenFlight\lib;..\..\lib\ticpp\lib;$(SolutionDir)\Output\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RadarMap.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMapCom.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Config\AppConfig.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Config\TechConfig.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\mrg32k3a.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\Noise.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Effects\Processor.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Frame\Frame.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Geometry\Mesh.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Geometry\GeometricObject.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\RadarMapAsync.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\RadarMapSync.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Targets\Model.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Targets\Targets.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\LOD.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\Terrain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Terrain\Tile.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\Timer.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap\World.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RadarMap_i.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RLib\Shader\Program.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RLib\Shader\Unit.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="RLib\Window\Window.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Video\DefMonitors.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Video\HDMICaptureVideoController.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Video\TVCaptureVideoController.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XmlConfigReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClrVideoConfig.h" />
+    <ClInclude Include="dllmain.h" />
+    <ClInclude Include="NativeVideoConfig.h" />
+    <ClInclude Include="RadarMapCom.h" />
+    <ClInclude Include="RadarMap\Config\AppConfig.h" />
+    <ClInclude Include="RadarMap\Config\TechConfig.h" />
+    <ClInclude Include="RadarMap\Constants.h" />
+    <ClInclude Include="RadarMap\Effects\Noise.h" />
+    <ClInclude Include="RadarMap\Effects\Processor.h" />
+    <ClInclude Include="RadarMap\Effects\Shaders.h" />
+    <ClInclude Include="RadarMap\Frame\CubicKernel.h" />
+    <ClInclude Include="RadarMap\Frame\Frame.h" />
+    <ClInclude Include="RadarMap\Frame\Shaders.h" />
+    <ClInclude Include="RadarMap\Geometry\Mesh.h" />
+    <ClInclude Include="RadarMap\Geometry\RenderProgram.h" />
+    <ClInclude Include="RadarMap\Geometry\GeometricObject.h" />
+    <ClInclude Include="RadarMap\Request.h" />
+    <ClInclude Include="RadarMap\RadarMapAsync.h" />
+    <ClInclude Include="RadarMap\RadarMapSync.h" />
+    <ClInclude Include="RadarMap\RequestData.h" />
+    <ClInclude Include="RadarMap\Shading\ShadeMap.h" />
+    <ClInclude Include="RadarMap\Shading\ShadeMapAdditional.h" />
+    <ClInclude Include="RadarMap\Shading\Shaders.h" />
+    <ClInclude Include="RadarMap\Targets\Point\RenderProgram.h" />
+    <ClInclude Include="RadarMap\Targets\Model.h" />
+    <ClInclude Include="RadarMap\Targets\Targets.h" />
+    <ClInclude Include="RadarMap\Terrain\Background\RenderProgram.h" />
+    <ClInclude Include="RadarMap\Terrain\Shaders.h" />
+    <ClInclude Include="RadarMap\Terrain\LOD.h" />
+    <ClInclude Include="RadarMap\Terrain\Terrain.h" />
+    <ClInclude Include="RadarMap\Terrain\Tile.h" />
+    <ClInclude Include="RadarMap\Timer.h" />
+    <ClInclude Include="RadarMap\World.h" />
+    <ClInclude Include="RadarMap_i.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RLib\Collection\Array2D.h" />
+    <ClInclude Include="RLib\Collection\Renderbuffer.h" />
+    <ClInclude Include="RLib\Collection\Texture.h" />
+    <ClInclude Include="RLib\Processing\Processing.h" />
+    <ClInclude Include="RLib\Serialization\EXR.h" />
+    <ClInclude Include="RLib\Shader\Program.h" />
+    <ClInclude Include="RLib\Shader\Unit.h" />
+    <ClInclude Include="RLib\Window\Window.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Video\DefMonitors.h" />
+    <ClInclude Include="Video\HDMICapture.h" />
+    <ClInclude Include="Video\HDMICaptureVideoController.h" />
+    <ClInclude Include="Video\TVCapture.h" />
+    <ClInclude Include="Video\TVCaptureVideoController.h" />
+    <ClInclude Include="xdlldata.h" />
+    <ClInclude Include="XmlConfigReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RadarMap.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\common\dx\CommServerData.xlsx">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Program Files (x86)\NTS\DocFirstDataItems\OoxmlToCpp.exe" %(fullpath) %(filename).h -namespace=radarmap_29k -project=RadarMap</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Program Files (x86)\NTS\DocFirstDataItems\OoxmlToCpp.exe" %(fullpath) %(filename).h -namespace=radarmap_29k -project=RadarMap</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="..\RadarMap.ini" />
+    <None Include="..\RadarMap.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\Shaders\RadarMap\Effects\AdditiveNoise.fs" />
+    <None Include="..\Shaders\RadarMap\Effects\BlurAzimuth.fs" />
+    <None Include="..\Shaders\RadarMap\Effects\BlurRange.fs" />
+    <None Include="..\Shaders\RadarMap\Effects\Permutation.fs" />
+    <None Include="..\Shaders\RadarMap\Effects\Speckle.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\BicubicFilter.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\BrightnessRegulator.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\DecartProjector.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\Polar.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\PolarProjector.fs" />
+    <None Include="..\Shaders\RadarMap\Frame\Projector.vs" />
+    <None Include="..\Shaders\RadarMap\Geometry\AzimuthRange.coord" />
+    <None Include="..\Shaders\RadarMap\Geometry\GeometricFunctions.sh" />
+    <None Include="..\Shaders\RadarMap\Geometry\IntersectTriangle.fs" />
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.fs" />
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.gs" />
+    <None Include="..\Shaders\RadarMap\Geometry\RenderGeometry.vs" />
+    <None Include="..\Shaders\RadarMap\Geometry\SignalFromPos.fs" />
+    <None Include="..\Shaders\RadarMap\Microwave.reflection" />
+    <None Include="..\Shaders\RadarMap\Shading\AzimuthCotanEvelation.coord" />
+    <None Include="..\Shaders\RadarMap\Shading\AzimuthEvelation.coord" />
+    <None Include="..\Shaders\RadarMap\Shading\Distance.fs" />
+    <None Include="..\Shaders\RadarMap\Shading\Shade.fs" />
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.fs" />
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.gs" />
+    <None Include="..\Shaders\RadarMap\Shading\ShadeMap.vs" />
+    <None Include="..\Shaders\RadarMap\Targets\Point\PointRender.fs" />
+    <None Include="..\Shaders\RadarMap\Targets\Point\PointRender.vs" />
+    <None Include="..\Shaders\RadarMap\Terrain\Background\RenderBackground.fs" />
+    <None Include="..\Shaders\RadarMap\Terrain\ElementsFOV.fs" />
+    <None Include="..\Shaders\RadarMap\Terrain\ElementsShade.fs" />
+    <None Include="..\videochannels.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RadarMap.def" />
+    <None Include="RadarMap.rgs" />
+    <None Include="RadarMapCom.rgs" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="RadarMap.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
